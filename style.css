@@ -33,13 +33,13 @@ body {
 }
 
 .social-container {
-  width: 275px; 
+  width: 20%; 
   min-width: 275px;
   margin: 3rem auto;
   background-color: var(--light-1);
   background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
   background-position: left top, right bottom;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   padding: 1rem 0;
 }
 
@@ -115,3 +115,99 @@ h1 {
   border-radius: 50%;
   margin-right: 15px;
 }
+
+@media (min-width: 800px) {
+  .social-container {
+    min-width: 800px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-size:33vmax, 33vmax;
+  }
+
+  .container-header {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  .headline {
+    text-align: left;
+    font-size: 32px;
+    font-weight: var(--bold);
+    width: 55%;
+    min-width: 250px;
+  }
+
+  .header-text {
+    text-align: left;
+    width: 80%;
+    min-width: 400px;
+    padding: 0 1rem;
+    font-size: var(--md-size);
+  }
+
+  .review-container {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    padding: 5rem;
+  }
+
+  .review-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    min-width: 350px;
+    margin: 1rem 0;
+  }
+
+  .stars {
+    margin: unset;
+  }
+
+  .mid > .stars {
+    margin-left: 12px;  
+  }
+
+  .review-wrapper + .mid {
+    margin-left: 30px;
+  }
+
+  .review-wrapper + .last {
+    margin-left: 60px;
+  }
+
+  .testimonial-container {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    display: flex;
+    margin-left: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+  }
+
+  .testimonial-card {
+    width: 25%;
+    min-width: 300px;
+    margin: 0 1rem;
+  }
+
+  .testimonial-card + .mid {
+    margin-top: 30px;
+  }
+
+  .testimonial-card + .last {
+    margin-top: 60px;
+  }
