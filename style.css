@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+:root{
+  --accent-1: hsl(300, 43%, 22%); 
+  --accent-2: hsl(333, 80%, 67%); 
+  --dark-1: hsl(303, 10%, 53%); 
+  --dark-1-transparent: hsla(303, 10%, 53%, 0.2);
+  --dark-2: hsl(300, 24%, 96%);
+  --light-1: hsl(0, 0%, 100%);
+  --md-size: 15px; 
+  --main-font: 'League Spartan', sans-serif;
+  --normal-weight: 400;
+  --semi-bold: 500; 
+  --bold: 700;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+  font-size: var(--md-size);
+}
 
 .attribution {
   font-size: 11px;
@@ -10,4 +30,88 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.social-container {
+  width: 275px; 
+  min-width: 275px;
+  margin: 3rem auto;
+  background-color: var(--light-1);
+  background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+}
+
+.container-header {
+  text-align: center;
+}
+
+h1 {
+  color: var(--accent-1);
+  font-weight: var(--bold);
+  padding: 0 1rem;
+}
+
+.header-text {
+  color: var(--dark-1);
+}
+
+.review-wrapper {
+  background-color: var(--dark-1-transparent);
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.stars {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.rating {
+  font-weight: var(--semi-bold);
+  color: var(--accent-1);
+}
+
+.testimonial-container {
+  margin-top: 1.5rem;
+}
+
+.testimonial-card {
+  background-color: var(--accent-1);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  
+}
+
+.user-name {
+  color: var(--dark-2);
+  font-weight: var(--semi-bold);
+  margin-bottom: -10px;
+}
+
+.user-tag {
+  color: var(--accent-2);
+}
+
+.user-comments {
+  color: var(--light-1);
+  font-weight: var(--semi-bold);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
