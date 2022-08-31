@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AlexdelCarmen/social-proof)
-- Live Site URL: [Add live site URL here](https://alexdelcarmen.github.io/social-proof/)
+- Solution URL: [Solution](https://github.com/AlexdelCarmen/social-proof)
+- Live Site URL: [Live site](https://alexdelcarmen.github.io/social-proof/)
 
 ## My process
 
